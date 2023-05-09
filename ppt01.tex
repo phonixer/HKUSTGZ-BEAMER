@@ -1,37 +1,37 @@
 \usetikzlibrary{arrows,shapes,chains}
-\section{任务规划}
+\section{First section}
 \frame
 {
   \frametitle{\secname~ }
   \begin{columns}[onlytextwidth]
   \begin{column}{0.35\textwidth}
-  \begin{block}{计划}
+  \begin{block}{plan}
   \begin{itemize}
-    \item 论文写作
-    \item 学习《机器学习》
-    \item 学习英语
+    \item xxxxx
+    \item xxxxxx
+    \item xxxxx
   \end{itemize}
   \end{block}
   \end{column}
   \hspace{0.5em}
   \begin{column}{0.65\textwidth}
-    \begin{block}{实际}
+    \begin{block}{do}
       \begin{itemize}
-        \item 完成初稿，熟练使用latex
-        \item 学习了4章
-        \item 完成一篇专利的初稿
+        \item xxxx
+        \item xxxx
+        \item xxxx
       \end{itemize}
     \end{block}
   \end{column}
   \end{columns}
   \note{
-    笔记
+    note
   }
 }
 
-\subsection{论文写作}
-\frame{
-  \frametitle{论文写作}
+\subsection{sub-section}
+\frame{ 
+  \frametitle{sub-section xxxxx}
   \begin{figure}  
   \tikzstyle{format}=[rectangle,draw,thin,fill=white]  
   %定义语句块的颜色,形状和边
@@ -54,12 +54,12 @@
 		%\draw[->] (n1.north) to node{Yes} (n0.south);  带字,字在箭头方向左边
 		%\draw[->] (n1.north) to[out=60,in=300] node{Yes} (n0.south);  曲线
 		%\draw[->,draw=red](n2)--(n1);  带颜色的线
-  \node[format] (start){阅读论文};
-  \node[format,below of=start,node distance=10mm] (define){查阅相关文献};
-  \node[format,below of=define,node distance=10mm] (PCFinit){复现文献};
-  \node[format,below of=PCFinit,node distance=10mm] (DS18init){完成中文初稿};
-  \node[format,below of=DS18init,node distance=10mm] (LCDinit){修改并翻译中文草稿};
-  \node[format,below of=LCDinit,node distance=10mm] (processtime){修改英文论文};
+  \node[format] (start){aaa};
+  \node[format,below of=start,node distance=10mm] (define){bbbb};
+  \node[format,below of=define,node distance=10mm] (PCFinit){cccc};
+  \node[format,below of=PCFinit,node distance=10mm] (DS18init){dddd};
+  \node[format,below of=DS18init,node distance=10mm] (LCDinit){eeee};
+  \node[format,below of=LCDinit,node distance=10mm] (processtime){ffff};
   \draw[->] (start)--(define);
   \draw[->] (define)--(PCFinit);
   \draw[->](PCFinit)--(DS18init);
@@ -99,44 +99,39 @@
   % 其他：Tribox、Swept-sphere、 Sphere-shell、Zonotopes、圆柱形、圆锥、椭球形等等。
 
   \note{
-    上面这几个就是最常见的凸包围体。最常见的沿坐标轴方向的AABB包围盒，带方向的包围盒OBB，包围球，k面的凸包围体（k-DOP），和凸包，还有一些比较特定领域用的圆柱、圆锥形、椭球形等等。
-    其中k-DOP是采用k/2对固定方向的半空间相交构成的凸包围体，是综合比较较好的包围体，因为可以通过k来调节包围体的简单性和紧致性来满足不同应用的需求。
+    what you prepare to say.
   }
 }
 
 \frame{
-  \frametitle{学习《机器学习》}
+  \frametitle{frame title}
   \footnotesize
   %\textbf  加粗
-  计划啃完整本，最后看了\textbf{决策树}、\textbf{神经网络}、\textbf{支持向量机}、\textbf{贝叶斯分类器}、\\
-  \textbf{集成学习}、\textbf{聚类}、\textbf{概率图模型}
-  \begin{block}{收获}
+  acacacacacacacacacaccacacacacacaca
+  \begin{block}{plan}
     \hspace{-2.0em}   \begin{minipage}{\textwidth}
       \begin{description}
-        \item[机器学习] 了解并推导常见机器学习算法
-        \item[概率图模型] 学习概率图模型的推理，参数学习算法\\
-                        在王昊的指导下，学习Soble指数法
-        \item[基础知识] 有了理论基础，发现以前的很多表述不够准确
+        \item[item1] aaaa
+        \item[item2] bbbb\\
+                     cccc
+        \item[item3] dddd
       \end{description}
     \end{minipage}
   \end{block}
 
   \note{
-    描述PPT。
+    What you say by your mouth
 
   }
 }
 
-\subsection{latex绘制贝叶斯网络}
+\subsection{latex}
 \frame{
   \frametitle{\subsecname~ }
-  \begin{figure}[!]
-    \begin{minipage}[c]{5cm}  
-    \resizebox{!}{3cm}{%
-    \parbox{4cm}{\input{bayes_figure/beyesboer92.tex}}
-    }
-    \end{minipage}\caption{\label{1} 贝叶斯网络}   
-  \end{figure} 
+  \begin{figure}[htb]   
+    \center{\includegraphics[width=8cm]  {figures/home_bg_1.jpg}}   
+    \caption{\label{1} figure 1}    
+  \end{figure}
 
 
   \note{

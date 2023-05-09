@@ -1,3 +1,3 @@
-xelatex -output-driver="xdvipdfmx -V 5" nwpu_report.tex
-bibtex nwpu_report.aux
-xelatex -output-driver="xdvipdfmx -V 5" nwpu_report.tex
+xelatex -output-driver="xdvipdfmx -V 5" hkust-beamer.tex
+bibtex hkust-beamer
+xelatex -output-driver="xdvipdfmx -V 5" hkust-beamer.tex
